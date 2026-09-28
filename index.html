@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Class 12 · 10-Day Physics + Chemistry Plan</title><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#050505"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
+<style>
+:root{--y:#e6ff00;--bg1:#050505;--bg2:#2a2a2d;--card:#141416;--line:#333338;--tx:#ececec;--mut:#9a9aa2;--p:#7dd3fc;--c:#f0abfc}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 "Segoe UI",system-ui,sans-serif;color:var(--tx);background:linear-gradient(160deg,var(--bg1),var(--bg2) 70%,#0c0c0d) fixed;min-height:100vh;padding:16px}
+main{max-width:940px;margin:auto}
+h1{font-size:1.7rem;margin:4px 0;letter-spacing:-.5px}h1 b{color:var(--y)}
+.sub{color:var(--mut);margin:0 0 14px}
+.card{background:linear-gradient(180deg,#1b1b1e,var(--card));border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px}
+.bar{height:10px;background:#0a0a0a;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#9db000,var(--y));box-shadow:0 0 12px var(--y);transition:width .35s}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.stats div{font-size:.85rem;color:var(--mut)}.stats b{display:block;color:var(--tx);font-size:1rem}
+.stats .bar{margin-top:5px;height:6px}.stats .p i{background:var(--p);box-shadow:none}.stats .c i{background:var(--c);box-shadow:none}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:6px}
+.tabs button{flex:0 0 auto;min-width:64px;background:#111;color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:7px 10px;cursor:pointer;font:inherit;font-size:.85rem}
+.tabs button small{display:block;color:var(--mut)}
+.tabs button.on{border-color:var(--y);box-shadow:0 0 10px #e6ff0055;color:var(--y)}
+.tabs button.done small{color:var(--y)}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--y);outline-offset:2px}
+h2{font-size:1.2rem;margin:0 0 4px}h3{font-size:1rem;margin:14px 0 6px}
+.focus{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.focus div{border-left:3px solid;padding:6px 10px;background:#0d0d0e;border-radius:6px}
+.focus .p{border-color:var(--p)}.focus .c{border-color:var(--c)}.focus span{color:var(--mut);font-size:.8rem;display:block}
+.chk{display:flex;gap:10px;align-items:flex-start;padding:7px 8px;border-radius:8px;cursor:pointer}
+.chk:hover{background:#ffffff08}
+.chk input{position:absolute;opacity:0}
+.chk u{flex:0 0 20px;height:20px;border:2px solid #666;border-radius:5px;margin-top:1px;display:grid;place-items:center;text-decoration:none;transition:.15s}
+.chk input:checked+u{background:var(--y);border-color:var(--y);box-shadow:0 0 10px var(--y)}
+.chk input:checked+u::after{content:"✓";color:#000;font-weight:900;font-size:.8rem}
+.chk input:focus-visible+u{outline:2px solid #fff}
+.chk input:checked~em{color:var(--mut);text-decoration:line-through}
+.chk em{font-style:normal}
+.tag{font-size:.7rem;padding:1px 6px;border-radius:9px;margin-left:6px;color:#000}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:105px 1fr;gap:8px;padding:6px 8px;border-left:3px solid var(--line);margin-bottom:4px;background:#0d0d0e;border-radius:0 6px 6px 0;font-size:.9rem}
+.tl .p{border-color:var(--p)}.tl .c{border-color:var(--c)}.tl .m{border-color:#f59e0b}.tl .n{border-color:#a3e635}.tl .b{opacity:.6}.tl .s{opacity:.5}
+.tl li.now{background:#e6ff0018;border-color:var(--y);box-shadow:0 0 0 1px var(--y) inset}
+.tl time{color:var(--mut);font-variant-numeric:tabular-nums}
+.nt{display:flex;gap:8px;margin-bottom:8px}
+.nt button,.act button{background:#111;color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:6px 12px;cursor:pointer;font:inherit}
+.nt button.on{background:var(--y);color:#000;border-color:var(--y);font-weight:600}
+textarea{width:100%;min-height:150px;background:#0a0a0b;color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:10px;font:14px/1.5 Consolas,monospace;resize:vertical}
+.act{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.act .y{background:var(--y);color:#000;border-color:var(--y);font-weight:600}
+.note{color:var(--mut);font-size:.82rem}
+@media(max-width:560px){.focus,.stats{grid-template-columns:1fr}.tl li{grid-template-columns:90px 1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body><main>
+<h1>Class 12 <b>Physics + Chemistry</b> · 10-day plan</h1>
+<p class="sub">Built from your session 2026-27 syllabus PDF. Maths class 4–6 PM, 2 h maths homework, 8 h sleep, 12 h for study, meals and breaks.</p>
+<section class="card"><div class="bar"><i id="ob"></i></div>
+<div class="stats"><div><b id="ot">0%</b>Overall (<span id="oc">0</span> tasks done)</div>
+<div class="p"><b id="pt">0%</b>Physics<div class="bar"><i id="pb"></i></div></div>
+<div class="c"><b id="ct">0%</b>Chemistry<div class="bar"><i id="cb"></i></div></div></div></section>
+<nav class="tabs" id="tabs" aria-label="Days"></nav>
+<section class="card" id="day"></section>
+<section class="card"><h3 style="margin-top:0">Notes</h3>
+<div class="nt"><button id="np">Physics</button><button id="nc">Chemistry</button></div>
+<textarea id="ta" placeholder="Formulas, definitions, reactions, diagrams to redraw..."></textarea>
+<div class="act"><button class="y" id="ex">Export all notes (.md)</button><button id="rs">Reset progress</button><button id="xp">Export progress</button><button id="ip">Import progress</button><button id="cp">Copy backup</button><button id="pp">Paste backup</button><input type="file" id="fi" accept=".json,application/json" hidden></div>
+<p class="note">Progress and notes save in this browser. Your notes are per day and subject.</p></section>
+</main>
+<script>
+const D=[
+{p:'Electric Charges & Fields',c:'Solutions',
+ps:['Electric charge, conservation of charge','Coulomb’s law and force between multiple charges','Electric field and field lines','Electric dipole: field, torque','Electric flux and Gauss’s law (concept)'],
+cs:['Types of solutions, concentration terms','Henry’s law, Raoult’s law','Ideal/non-ideal solutions, azeotropes','Colligative properties','van’t Hoff factor, abnormal molar mass']},
+{p:'Electric Potential (+ Gauss applications)',c:'Electrochemistry',
+ps:['Applications of Gauss’s law: line, sheet, shell','Electric potential and potential difference','Potential due to point charge, dipole, system of charges','Equipotential surfaces','Potential energy of a charge system'],
+cs:['Galvanic cells, EMF, electrode potential','Nernst equation, Gibbs energy link','Conductance, Kohlrausch’s law','Electrolysis, Faraday’s laws','Batteries, fuel cells, corrosion']},
+{p:'Capacitance & Capacitors',c:'Chemical Kinetics',
+ps:['Capacitance and capacitors','Parallel plate capacitor, effect of dielectric','Series and parallel combinations','Energy stored in a capacitor','Light day: revise Days 1–2 and clear backlog'],
+cs:['Rate of reaction, rate law','Order and molecularity','Integrated rate equations, half-life','Arrhenius equation, activation energy','Collision theory']},
+{p:'Current Electricity',c:'d & f Block Elements',
+ps:['Electric current, drift velocity','Ohm’s law, resistance, resistivity','Series and parallel combinations of resistors','Kirchhoff’s laws','Wheatstone bridge']
+,cs:['Electronic configuration, general trends','Properties of transition metals','KMnO₄ and K₂Cr₂O₇ preparation and reactions','Lanthanoids, lanthanoid contraction','Actinoids and comparison']},
+{p:'Moving Charges & Magnetism',c:'Coordination Compounds',
+ps:['Magnetic force on moving charge (Lorentz)','Force on current-carrying conductor','Biot–Savart law','Ampere’s law: solenoid, toroid','Charged particle in magnetic field, torque on loop'],
+cs:['Werner’s theory, key terms','IUPAC nomenclature','Isomerism','VBT and CFT','Colour, stability, applications']},
+{p:'Magnetism & Matter + Electromagnetic Induction',c:'Haloalkanes & Haloarenes',
+ps:['Bar magnet and magnetic field lines','Magnetisation, dia/para/ferromagnetism','Faraday’s laws of induction','Lenz’s law, motional emf','Eddy currents, self and mutual inductance'],
+cs:['Nomenclature and preparation','SN1 vs SN2 mechanisms','Elimination, optical activity','Haloarene reactions','Named reactions: Finkelstein, Swarts, Sandmeyer, Wurtz–Fittig']},
+{p:'Alternating Current',c:'Alcohols, Phenols & Ethers',
+ps:['AC voltage and current, rms values','Series LCR circuit, impedance','LC oscillations, resonance','Power and power factor','Transformers and power transmission'],
+cs:['Nomenclature and preparation','Physical properties, acidity','Reactions of alcohols and phenols','Reimer–Tiemann, Kolbe','Ethers: Williamson synthesis, cleavage']},
+{p:'Ray Optics & Optical Instruments',c:'Aldehydes, Ketones & Carboxylic Acids',
+ps:['Reflection, mirror formula','Refraction, total internal reflection','Lens formula and magnification','Prism and dispersion','Microscope and telescope'],
+cs:['Nomenclature, preparation (Rosenmund, Stephen, Etard)','Nucleophilic addition reactions','Aldol, Cannizzaro, Clemmensen, Wolff–Kishner','Carboxylic acids: preparation, properties','Distinguishing tests']},
+{p:'Wave Optics + Electromagnetic Waves',c:'Amines + Biomolecules',
+ps:['Huygens principle, wavefronts','Interference, Young’s double slit','Diffraction, single slit','Polarisation, Brewster’s law','Displacement current, EM spectrum and uses'],
+cs:['Amines: classification, preparation (Gabriel, Hoffmann)','Amines: basicity, reactions, diazonium salts','Carbohydrates','Proteins and enzymes','Nucleic acids, vitamins, hormones']},
+{p:'Full Physics revision',c:'Full Chemistry revision',
+ps:['Revise formula sheet: Units 1–5','Revise formula sheet: Units 6–11','Solve one full Physics paper (timed)','Redo mistakes from the paper'],
+cs:['Revise named reactions and conversions','Revise d & f, coordination, biomolecules facts','Solve one full Chemistry paper (timed)','Redo mistakes from the paper']}];
+const TL=d=>[['07:00','09:30','Physics theory: '+d.p,'p'],['09:30','10:00','Breakfast and reset','b'],['10:00','12:30','Chemistry theory: '+d.c,'c'],['12:30','13:30','Lunch and rest','b'],['13:30','15:30','Numericals: Physics 1 h, Chemistry 1 h','p'],['15:30','16:00','Break before class','b'],['16:00','18:00','Maths class (fixed)','m'],['18:00','18:30','Snack and break','b'],['18:30','20:30','Maths homework (2 h)','m'],['20:30','21:00','Dinner','b'],['21:00','22:30','Make notes: Physics 45 min, Chemistry 45 min','n'],['22:30','23:00','10-min recall, plan tomorrow, wind down','b'],['23:00','07:00','Sleep (8 h)','s']];
+const items=i=>{const d=D[i],r=[];d.ps.forEach((t,j)=>r.push([i+'p'+j,t,'p','Physics']));d.cs.forEach((t,j)=>r.push([i+'c'+j,t,'c','Chemistry']));
+const L=i==9;r.push([i+'x1',L?'Physics: 20 mixed numericals':'Physics numericals: 15 problems','p','Practice, notes, wrap-up'],[i+'x2',L?'Chemistry: 20 mixed questions':'Chemistry numericals and reaction practice','c','Practice, notes, wrap-up'],[i+'x3',L?'Finish one-page Physics summary':'Physics notes: formula box + diagrams','p','Practice, notes, wrap-up'],[i+'x4',L?'Finish one-page Chemistry summary':'Chemistry notes: reactions + mechanisms','c','Practice, notes, wrap-up'],[i+'x5','Maths homework (2 h)','o','Practice, notes, wrap-up'],[i+'x6','10-min recall and plan tomorrow','o','Practice, notes, wrap-up']);return r};
+const M={};let st={chk:{},notes:{},cur:0,sub:'p'};
+try{Object.assign(st,JSON.parse(localStorage.getItem('c12plan_classic')||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem('c12plan_classic',JSON.stringify(st))}catch(e){}};
+const $=id=>document.getElementById(id);
+const pct=(a,b)=>b?Math.round(a/b*100):0;
+const tm=s=>{const[h,m]=s.split(':');return+h*60+ +m};
+function stats(){let a=0,n=0,S={p:[0,0],c:[0,0]};
+D.forEach((_,i)=>items(i).forEach(([id,,s])=>{n++;const k=!!st.chk[id];if(k)a++;if(S[s]){S[s][1]++;if(k)S[s][0]++}}));
+$('ob').style.width=$('ot').textContent=pct(a,n)+'%';$('ob').style.width=pct(a,n)+'%';$('ot').textContent=pct(a,n)+'%';$('oc').textContent=a+'/'+n;
+['p','c'].forEach(k=>{$(k+'t').textContent=pct(...S[k])+'%';$(k+'b').style.width=pct(...S[k])+'%'});
+$('tabs').innerHTML=D.map((_,i)=>{const it=items(i),d=it.filter(x=>st.chk[x[0]]).length,p=pct(d,it.length);
+return `<button data-i="${i}" class="${i==st.cur?'on ':''}${p==100?'done':''}">Day ${i+1}<small>${p}%</small></button>`}).join('')}
+function day(){const i=st.cur,d=D[i],it=items(i),done=it.filter(x=>st.chk[x[0]]).length;
+let h=`<h2>Day ${i+1}${i==9?': Revision + mock day':''}</h2><div class="bar"><i style="width:${pct(done,it.length)}%"></i></div>
+<div class="focus"><div class="p"><span>Physics</span>${d.p}</div><div class="c"><span>Chemistry</span>${d.c}</div></div>`;
+let g='';it.forEach(([id,t,s,gr])=>{if(gr!=g){g=gr;h+=`<h3>${gr}</h3>`}
+h+=`<label class="chk"><input type="checkbox" data-id="${id}" ${st.chk[id]?'checked':''}><u></u><em>${t}</em></label>`});
+h+=`<h3>Daily schedule</h3><ul class="tl" id="tl">`+TL(d).map(([a,b,t,k])=>`<li class="${k}" data-a="${a}" data-b="${b}"><time>${a}–${b}</time><span>${t}</span></li>`).join('')+`</ul>
+<p class="note">The highlighted block matches your current clock time.</p>`;
+$('day').innerHTML=h;mark();notes()}
+function mark(){const n=new Date(),m=n.getHours()*60+n.getMinutes();
+document.querySelectorAll('#tl li').forEach(li=>{const a=tm(li.dataset.a),b=tm(li.dataset.b);
+li.classList.toggle('now',b>a?(m>=a&&m<b):(m>=a||m<b))})}
+function notes(){$('np').className=st.sub=='p'?'on':'';$('nc').className=st.sub=='c'?'on':'';$('ta').value=st.notes[st.cur+st.sub]||''}
+$('day').addEventListener('change',e=>{if(e.target.dataset.id){st.chk[e.target.dataset.id]=e.target.checked;save();stats();
+const it=items(st.cur);document.querySelector('#day .bar i').style.width=pct(it.filter(x=>st.chk[x[0]]).length,it.length)+'%'}});
+$('tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b){st.cur=+b.dataset.i;save();stats();day()}});
+$('np').onclick=()=>{st.sub='p';save();notes()};$('nc').onclick=()=>{st.sub='c';save();notes()};
+$('ta').oninput=e=>{st.notes[st.cur+st.sub]=e.target.value;save()};
+$('ex').onclick=()=>{let o='# Class 12 Physics + Chemistry notes\n';D.forEach((d,i)=>{['p','c'].forEach(k=>{const t=st.notes[i+k];if(t)o+=`\n## Day ${i+1} · ${k=='p'?'Physics: '+d.p:'Chemistry: '+d.c}\n${t}\n`})});
+const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([o],{type:'text/markdown'}));a.download='class12-notes.md';a.click()};
+$('rs').onclick=()=>{if(confirm('Clear all checkboxes? Your notes stay.')){st.chk={};save();stats();day()}};
+
+function apply(o){if(!o||typeof o!='object'||!o.chk||!o.notes)throw 0;st.chk=o.chk;st.notes=o.notes;save();stats();day()}
+const bk=()=>JSON.stringify({app:'class12-plan',chk:st.chk,notes:st.notes});
+$('xp').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([bk()],{type:'application/json'}));a.download='class12-progress.json';a.click()};
+$('ip').onclick=()=>$('fi').click();
+$('fi').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{apply(JSON.parse(r.result));alert('Progress restored.')}catch(x){alert('That file is not a valid progress backup.')}};r.readAsText(f);e.target.value=''};
+$('cp').onclick=()=>{const t=bk();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>alert('Backup copied. Paste it somewhere safe.')).catch(()=>prompt('Copy this backup text:',t))};
+$('pp').onclick=()=>{const t=prompt('Paste your backup text:');if(!t)return;try{apply(JSON.parse(t));alert('Progress restored.')}catch(x){alert('That text is not a valid backup.')}};
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
+stats();day();setInterval(mark,60000);
+</script></body></html>
